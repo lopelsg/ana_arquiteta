@@ -1,0 +1,613 @@
+/*Estilos Padrões*/
+*{ /*define configurações para todos os elementos da página*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*o tamanho dos elementos inclui margin e padding*/
+    text-decoration: none; /*remove underline de links*/
+    outline: none; /*retira a borda padrão de todos elementos*/
+    font-family: "Fauna One";
+}
+
+html{ /*define padrão para todo o documento html*/
+    font-size: 62.5%; /*macete para que 1rem=10px*/
+}
+/*Fim Estilos Padrões*/
+
+
+/*PÁGINA INICIAL*/
+.home-page{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden; /*some com a scroll bar horizontal*/
+}
+
+/*CABEÇALHO*/
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: #6dddd2;
+    position: relative; /*permite transformar elementos-filho*/
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 7rem;
+    background-color: #1D3B38;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*LOGO*/
+.logo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.logo span{
+    text-align: center;
+    color: white;
+    transform: translate(7rem, -2.2rem);
+}
+
+.logo span:nth-child(2){ /*ANNA GASCO*/
+    text-transform: uppercase;
+    font-size: 2.6rem;
+}
+
+.logo span:nth-child(3){ /*Arquitetura e Urbanismo*/
+    font-family: "Cinzel";
+    font-size: 1.2rem;
+}
+
+.logo img{ /*ícone casa-logo*/
+    width: 6rem;
+    transform: translate(0rem, 2.5rem);
+}
+
+/*FIM DO LOGO*/
+
+/*ITENS NAVEGAÇÃO*/
+.itens-nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 7rem;
+    align-items: center;
+}
+
+.item-nav{
+    list-style: none;
+    position: relative;
+}
+
+.item-nav:hover{ /*Traça uma inha abaixo dos itens de menu ao passar o mouse por cima*/
+    border-bottom: 0.2rem solid #75ff69;
+}
+
+.nav-link{
+    font-family: "Cinzel";
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+
+/*FIM ITENS DE NAVEGAÇÃO*/
+
+/*ÍCONES CONTATO*/
+.icones-contato{
+    width: 18%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-nav{
+    list-style: none;
+}
+
+.contato-link{
+    font-size: 2.3rem;
+    color: white;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: color 0.5s;
+}
+
+.contato-link:hover{ /*muda o ícone de cor quando o mouse passa por cima*/
+    color: #75ff69;
+}
+/*FIM ÍCONES CONTATO*/
+
+/*BOTÃO BARRA NAV.*/
+.navbar button{
+    width: 20rem;
+    height: 3rem;
+    background-color: #75ff69;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #1D3B38;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s; /*diminui a transição do efeito hover*/
+}
+
+.navbar button:hover{ /*animação botão*/
+    transform: translateY(-0.2rem);
+}
+/*FIM BOTÃO BARRA NAV.*/
+/*FIM BARRA DE NAVEGAÇÃO*/
+
+ /*SLOGAN*/
+.slogan{
+    /*config. texto*/
+    color: white;
+    text-align: right;
+    letter-spacing: 0.1rem;
+    /*config. tarja*/
+    width: 70rem;
+    padding: 2rem;
+    background-color: rgba(29, 59, 56, 0.75);
+    border-radius: 0 1rem 1rem 0;
+    position: absolute;
+    top: 20%;
+    z-index: 4;
+}
+
+.slogan h1{ /*ARQUITETURA CONSCIENTE*/
+    font-family: "Cinzel";
+    font-size: 4rem;
+    text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.slogan h2{ /*INTEGRANDO TECNOLOGIA A NATUREZA*/
+    font-size: 2.5rem;
+    font-weight: lighter;
+    text-transform: lowercase;
+    text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.slogan button{
+    width: 20rem;
+    height: 3rem;
+    background-color: #75ff69;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #1D3B38;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s; /*diminui a transição do efeito hover*/
+}
+
+.slogan button:hover{ /*animação botão*/
+    transform: translateY(-0.2rem);
+}
+/*FIM DO SLOGAN*/
+
+/*CARROSSEL*/
+.carrossel{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.slide[data-active]{
+    opacity: 1;
+}
+
+.slide > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.botao-carrossel{
+    position: absolute;
+    z-index: 2;
+    border: none;
+    background: none;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+
+.botao-carrossel:hover, .botao-carrossel:focus{
+    color: white;
+}
+
+.botao-carrossel.prev{
+    left: 1rem;
+}
+.botao-carrossel.next{
+    right: 1rem;
+}
+
+/*FIM DO CARROSSEL*/
+/*FIM DO CABEÇALHO*/
+
+/*SEÇÃO BIBLIOGRAFIA*/
+.bibliografia{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1D3B38, #4A6260, #75ff69);
+    position: relative;
+}
+
+.sobre{
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15rem 10rem 0 10rem;
+}
+
+.sobre h1{
+    font-family: "Cinzel";
+    font-size: 7rem;
+    letter-spacing: 0.5rem;
+    color: white;
+    text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+
+.sobre p{
+    width: 60rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    color: #e2e2e2;
+    text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.sobre button{ /*FALE COMIGO*/
+    width: 20rem;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #1D3B38;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    margin-top: 1.5rem;
+    transition: all 0.3s;
+}
+
+.sobre button:hover{
+    transform: scale(1.1);
+}
+
+.foto-annagasco{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.foto-annagasco img{
+    position: absolute;
+    border-radius: 1rem;
+    width: 35rem;
+    top: 20%;
+    box-shadow: 0 2rem 7rem rgba(0, 0, 0, 0.4);
+}
+/*FIM DA SEÇÃO BIBLIOGRAFIA/SOBRE*/
+
+/*SERVIÇOS*/
+.servicos{
+    width: 100%;
+    height: 150vh;
+    background: linear-gradient(to top, #1D3B38, #4A6260, #75ff69);
+    position: relative;
+}
+
+.serv-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 10%;
+    z-index: 2;
+}
+
+.serv-header h2{
+    font-family: "Cinzel";
+    font-size: 7rem;
+    letter-spacing: 0.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.serv-header span{
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    color: #e2e2e2;
+    text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.lista-servicos{
+    width: 70%;
+    height: 45rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    transform: translate(20%, 20%);
+}
+
+.servico{
+    width: 30rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 7rem rgba(0, 0, 0, 0.4);
+    color: #1D3B38;
+    background-color: rgb(203, 203, 203);
+}
+
+.servico i{
+    font-size: 3rem;
+    color: #1D3B38;
+    margin-bottom: 1rem;
+}
+
+.servico span{
+    font-family: "Cinzel";
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+.servico p{
+    font-size: 1.2rem;
+    justify-content: justify;
+}
+/*FIM DE SERVIÇOS*/
+
+/*CONTATO*/
+.contato{
+    width: 100%;
+    height: 100vh;
+    padding: 15rem 10rem 0 10rem;
+    background-color: #75ff69;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagens/contato_fundo.jpg);
+    background-size: contain; 
+}
+
+.contato h1{
+    font-family: "Cinzel";
+    font-size: 7rem;
+    letter-spacing: 0.5rem;
+    color: #1D3B38;
+    text-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+}
+
+/*CAIXA DE FORMULÁRIO*/
+.formulario-contato{
+    width: 40%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #1D3B38;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    top: 20rem;
+    left: 10rem;
+}
+
+.formulario-contato input, .formulario-contato textarea{
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-top: 0.3rem;
+    border: 1px solid #4A6260;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    color: #444;
+}
+
+.formulario-contato input::placeholder, .formulario-contato textarea::placeholder{
+    font-size: 1.3rem;
+    color: #888;
+}
+
+.formulario-contato input{
+    margin-bottom: 1rem;
+    height: 3rem;
+}
+
+.formulario-contato textarea{
+    height: 10rem;
+}
+
+/*BOTÃO ENVIAR*/
+.btn-enviarform{ /*ENVIAR*/
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #1D3B38;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    margin-top: 2.5rem;
+    transition: color 0.3s;
+}
+
+.btn-enviarform:hover{
+    background-color: #4A6260;
+}
+/*BOTÃO ENVIAR*/
+/*FIM CAIXA DE FORMULÁRIO*/
+
+/*MAPA GOOGLE MAPS*/
+.contato-mapa{
+    transform: translate(30rem, -5rem);
+    filter: grayscale(100%) invert(0%);
+}
+
+.contato-mapa iframe{
+    border: 1px solid #1D3B38;
+}
+/*FIM MAPA GOOGLE MAPS*/
+/*FIM DE CONTATO*/
+
+/*RODAPÉ*/
+.rodape{
+    width: 100%;
+    height: 11rem;
+    background-color: #F2F2F2;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*LOGO (ÍCONE CASA)*/
+.logo-rodape{
+    width: 33%;
+    position: absolute;
+    left: 0;
+    padding-left: 10rem;
+}
+
+.logo-rodape img{
+    height: 7rem;
+}
+/*FIM DE LOGO (ÍCONE CASA)*/
+
+/*ENDEREÇO, TELEFONE E EMAIL*/
+.lista-contatos{
+    list-style: none;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20rem;
+}
+
+.contatos-link{
+    color: #1D3B38;
+}
+
+.item-info i{
+    font-size: 1.6rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.item-info span{
+    font-size: 1.2rem;
+}
+/*FIM DE ENDEREÇO, TELEFONE E EMAIL*/
+
+/*ICONES REDES SOCIAIS - RODAPÉ*/
+.icones-contato-rodape{
+    list-style: none;
+    display: flex;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    justify-content: space-evenly;
+}
+
+.rodape-link{
+    color: #1D3B38;
+}
+
+.rodape-link:hover{
+    color: #4A6260;
+}
+
+.icones-rodape button{
+    width: 20rem;
+    height: 3rem;
+    background-color: #1D3B38;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #F2F2F2;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s; /*diminui a transição do efeito hover*/
+}
+
+.icones-rodape button:hover{ /*animação botão*/
+    transform: translateY(-0.2rem);
+}
+/*FIM ICONES REDES SOCIAIS - RODAPÉ*/
+/*FIM DO RODAPÉ*/
+/*CREDITOS*/
+.creditos{
+    width: 100%;
+    height: 3vh;
+    background-color: #1D3B38;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "Cinzel";
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+}
+/*FIM DE CREDITOS*/
+/*FIM DA PÁGINA INICIAL*/

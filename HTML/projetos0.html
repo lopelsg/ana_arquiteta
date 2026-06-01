@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto e Desenvolvimento de Software</title>
+    <!-- rel="stylesheet" indica ao navegador que é um arquivo de estilos (CSS)-->
+    <!-- href="style.css" indica a localização do arquivo-->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/projeto0.css">
+    <!--permite o uso de ícones do Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!--permite o uso de fontes estilizadas do Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--fontes selecionadas: Cinzel & Fauna One-->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--PÁGINA INICIAL-->
+    <div class="home-page">
+        <!--BARRA DE NAVEGAÇÃO-->
+        <nav class="navbar">
+            <!--LOGO-->
+            <a href="index.html">
+                <div class="logo">
+                    <img src="../imagens/icon_logo.png">
+                    <span>Anna Gasco</span>
+                    <span>Arquitetura & Urbanismo</span>
+                </div>
+            </a>
+            <!--FIM DO LOGO-->
+
+            <!--ITENS NAVEGAÇÃO-->
+            <ul class="itens-nav">
+                <li class="item-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="item-nav">
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                </li>
+                <li class="item-nav">
+                    <a href="#projetos" class="nav-link">Projetos</a>
+                    <!--Menu Suspenso-->
+                    <div class="menu-suspenso">
+                        <div class="menu-suspenso-projetos">
+                            <div class="menu-projetos-item">
+                                <span>Residenciais</span>
+                            </div>
+                            <div class="menu-projetos-item">
+                                <span>Interiores</span>
+                            </div>
+                            <div class="menu-projetos-item">
+                                <span>Comerciais</span>
+                            </div>
+                            <div class="menu-projetos-item">
+                                <span>Culturais</span>
+                            </div>
+                            <div class="menu-projetos-item">
+                                <span>Institucionais</span>
+                            </div>
+                            <div class="menu-projetos-item">
+                                <span>Urbanismo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fim do Menu Suspenso-->
+                </li>
+                <li class="item-nav">
+                    <a href="#contato" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <!--FIM DE ITENS NAVEGAÇÃO-->
+
+            <!--ÍCONES CONTATO-->
+            <ul class="icones-contato">
+                <li class="icon-nav">
+                    <a href="https://www.facebook.com/" class="contato-link"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://www.instagram.com/" class="contato-link"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://www.youtube.com/" class="contato-link"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://br.linkedin.com/" class="contato-link"><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://br.linkedin.com/" class="contato-link"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://web.whatsapp.com/" class="contato-link"><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+            </ul>
+            <!--FIM ÍCONES CONTATO-->
+            <button type="button">Solicite um Orçamento</button>
+        </nav>
+        <!--FIM DA BARRA DE NAVEGAÇÃO-->
+
+        <!--PROJETOS-->
+        <section class="projetos" id="projetos">
+            <h1>Projetos</h1>
+            <h2>Conheça nosso trabalho!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nemo, mollitia qui exercitationem est error temporibus dolor
+            recusandae? Dolore delectus maiores quaerat pariatur dignissimos
+            ipsum aspernatur aperiam, fugit ratione labore. Maxime!</p>
+            <!--Filtro de navegação dos projetos-->
+            <div class="filtro-nav">
+                <a href="#" class="filtro-nav-link" data-type="residenciais">Residenciais</a>
+                <a href="#" class="filtro-nav-link" data-type="interiores">Interiores</a>
+                <a href="#" class="filtro-nav-link" data-type="comerciais">Comerciais</a>
+                <a href="#" class="filtro-nav-link" data-type="culturais">Culturais</a>
+                <a href="#" class="filtro-nav-link" data-type="institucionais">Institucionais</a>
+                <a href="#" class="filtro-nav-link" data-type="urbanismo">Urbanismo</a>
+                <a href="#" class="filtro-nav-link active" data-type="todos">Ver Todos</a>
+            </div>
+            <!--Fim de Filtro de navegação dos projetos-->
+           
+            <!--PROJETOS ARQUITETONICOS-->
+            <div class="lista-projetos">
+                <!--Residenciais-->
+                <!--Casa 1-->
+                <div class="projeto" data-type="residenciais">
+                    <img src="../imagens/residenciais-arth1.jpg">
+                    <img src="../imagens/residenciais-arth2.jpg">
+                    <img src="../imagens/residenciais-arth3.jpg">
+                </div>
+                <!--Casa 2-->
+                <div class="projeto" data-type="residenciais">
+                    <img src="../imagens/residenciais-calmhouse1.jpg">
+                    <img src="../imagens/residenciais-calmhouse2.jpg">
+                    <img src="../imagens/residenciais-calmhouse3.jpg">
+                </div>
+                <!--Casa 3-->
+                <div class="projeto" data-type="residenciais">
+                    <img src="../imagens/residenciais-northvan1.jpg">
+                    <img src="../imagens/residenciais-northvan2.jpg">
+                    <img src="../imagens/residenciais-northvan3.jpg">
+                </div>
+                <!--Casa 4-->
+                <div class="projeto" data-type="residenciais">
+                    <img src="../imagens/residenciais-townedge1.jpg">
+                    <img src="../imagens/residenciais-townedge2.jpg">
+                    <img src="../imagens/residenciais-townedge3.jpg">
+                </div>
+                <!--INTERIORES-->
+                <!--Interior 1-->
+                <div class="projeto" data-type="interiores">
+                    <img src="../imagens/interiores-tribeca1.jpg">
+                    <img src="../imagens/interiores-tribeca2.jpg">
+                    <img src="../imagens/interiores-tribeca3.jpg">
+                </div>
+                <!--Interior 2-->
+                <div class="projeto" data-type="interiores">
+                    <img src="../imagens/interiores-mensa1.jpg">
+                    <img src="../imagens/interiores-mensa2.jpg">
+                    <img src="../imagens/interiores-mensa3.jpg">
+                </div>
+                <!--Interior 3-->
+                <div class="projeto" data-type="interiores">
+                    <img src="../imagens/interiores-lopota1.jpg">
+                    <img src="../imagens/interiores-lopota2.jpg">
+                    <img src="../imagens/interiores-lopota3.jpg">
+                </div>
+                <!--COMERCIAIS-->
+                <!--Comercial 1-->
+                <div class="projeto" data-type="comerciais">
+                    <img src="../imagens/comerciais-sunrise1.jpg">
+                    <img src="../imagens/comerciais-sunrise2.jpg">
+                    <img src="../imagens/comerciais-sunrise3.jpg">
+                </div>
+                <!--Comercial 2-->
+                <div class="projeto" data-type="comerciais">
+                    <img src="../imagens/comerciais-treetavern1.jpg">
+                    <img src="../imagens/comerciais-treetavern2.jpg">
+                    <img src="../imagens/comerciais-treetavern3.jpg">
+                </div>
+                <!--CULTURAIS-->
+                <!--Cultural 1-->
+                <div class="projeto" data-type="culturais">
+                    <img src="../imagens/culturais-samuel1.jpg">
+                    <img src="../imagens/culturais-samuel2.jpg">
+                    <img src="../imagens/culturais-samuel3.jpg">
+                </div>
+                <!--Cultural 2-->
+                <div class="projeto" data-type="culturais">
+                    <img src="../imagens/culturais-court1.jpg">
+                    <img src="../imagens/culturais-court2.jpg">
+                    <img src="../imagens/culturais-court3.jpg">
+                </div>
+                <!--INSTITUCIONAIS-->
+                <!--Institucional 1-->
+                <div class="projeto" data-type="institucionais">
+                    <img src="../imagens/institucionais-school1.jpg">
+                    <img src="../imagens/institucionais-school2.jpg">
+                    <img src="../imagens/institucionais-school3.jpg">
+                </div>
+                <!--Institucional 2-->
+                <div class="projeto" data-type="institucionais">
+                    <img src="../imagens/institucionais-museum1.jpg">
+                    <img src="../imagens/institucionais-museum2.jpg">
+                    <img src="../imagens/institucionais-museum3.jpg">
+                </div>
+                <!--Institucional 3-->
+                <div class="projeto" data-type="institucionais">
+                    <img src="../imagens/institucionais-institute1.jpg">
+                    <img src="../imagens/institucionais-institute2.jpg">
+                    <img src="../imagens/institucionais-institute3.jpg">
+                </div>
+                <!--URBANISMO-->
+                <!--Urbanismo 1-->
+                <div class="projeto" data-type="urbanismo">
+                    <img src="../imagens/urbanismo-leepark1.jpg">
+                    <img src="../imagens/urbanismo-leepark2.jpg">
+                    <img src="../imagens/urbanismo-leepark3.jpg">
+                </div>
+                <!--Urbanismo 2-->
+                <div class="projeto" data-type="urbanismo">
+                    <img src="../imagens/urbanismo-corrego1.jpg">
+                    <img src="../imagens/urbanismo-corrego2.jpg">
+                    <img src="../imagens/urbanismo-corrego3.jpg">
+                </div>
+            <!--FIM DE PROJETOS ARQUITETONICOS-->
+            </div>
+        </section>
+        <!--FIM DO PROJETOS-->
+
+        <!--RODAPÉ-->
+        <footer class="rodape">
+            <!--ÍCONE LOGO-->
+            <div class="logo-rodape">
+                <img src="../imagens/icon_logo_darkgreen.png">
+            </div>
+            <!--FIM ÍCONE LOGO-->
+
+            <!--ENDEREÇO, TELEFONE E EMAIL-->
+            <div class="info-contato">
+                <ul class="lista-contatos">
+                    <li class="item-info">
+                        <a href="#" class="rodape-link">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>+55 (13) 98753-5823</span>
+                        </a>
+                    </li>
+                    <li class="item-info">
+                        <a href="#" class="rodape-link">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>contato@annagasco.com.br</span>
+                        </a>
+                    </li>
+                    <li class="item-info">
+                        <a href="https://maps.app.goo.gl/RHQzvtcPmEn1A2yF6" class="rodape-link">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Avenida Brasil, 320, Jardim Madalena - Pato Branco/PR</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--FIM ENDEREÇO, TELEFONE E EMAIL-->
+            
+            <!--ÍCONES REDES SOCIAIS-->
+            <div class="icones-rodape">
+                <ul class="icones-contato-rodape">
+                    <li class="icones-rodape">
+                        <a href="https://www.facebook.com/" class="rodape-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://www.instagram.com/" class="rodape-link"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://www.youtube.com/" class="rodape-link"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://br.linkedin.com/" class="rodape-link"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://br.linkedin.com/" class="rodape-link"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://web.whatsapp.com/" class="rodape-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+                <button type="button">Solicite um Orçamento</button>
+            </div>
+            <!--FIM ÍCONES REDES SOCIAIS-->
+        </footer>
+        <!--FIM DO RODAPÉ-->
+        
+        <!--CRÉDITOS-->
+        <section class="creditos">
+            <span>Site desenvolvido por Laura Lopes Guerreiro</span>
+            <span>Projeto e Desenvolvimento de Software</span>
+            <span>Centro Universitário Nelson Akiyoshi</span>
+        </section>
+        <!--FIM DO CRÉDITOS-->
+    </div>
+    <!--FIM DA PÁGINA INICIAL-->
+    
+    <!--Inclui os elementos de JavaScript (executáveis)-->
+    <script src="../JS/script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto e Desenvolvimento de Software</title>
+    <!-- rel="stylesheet" indica ao navegador que é um arquivo de estilos (CSS)-->
+    <!-- href="style.css" indica a localização do arquivo-->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/projetos.css">
+    <!--permite o uso de ícones do Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!--permite o uso de fontes estilizadas do Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--fontes selecionadas: Cinzel & Fauna One-->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--PÁGINA PROJETOS-->
+    <div class="projetos-page">
+        <!--BARRA DE NAVEGAÇÃO-->
+        <nav class="navbar">
+            <!--LOGO-->
+            <a href="index.html">
+                <div class="logo">
+                    <img src="../imagens/icon_logo.png">
+                    <span>Anna Gasco</span>
+                    <span>Arquitetura & Urbanismo</span>
+                </div>
+            </a>
+            <!--FIM DO LOGO-->
+
+            <!--ITENS NAVEGAÇÃO-->
+            <ul class="itens-nav">
+                <li class="item-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="item-nav">
+                    <a href="index.html#sobre" class="nav-link">Sobre</a>
+                </li>
+                <li class="item-nav">
+                    <a href="#projetos" class="nav-link">Projetos</a>
+                </li>
+                <li class="item-nav">
+                    <a href="index.html#contato" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <!--FIM DE ITENS NAVEGAÇÃO-->
+
+            <!--ÍCONES CONTATO-->
+            <ul class="icones-contato">
+                <li class="icon-nav">
+                    <a href="https://www.facebook.com/" class="contato-link"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://www.instagram.com/" class="contato-link"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://www.youtube.com/" class="contato-link"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://br.linkedin.com/" class="contato-link"><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://br.linkedin.com/" class="contato-link"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://web.whatsapp.com/" class="contato-link"><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+            </ul>
+            <!--FIM ÍCONES CONTATO-->
+            <button type="button">Solicite um Orçamento</button>
+        </nav>
+        <!--FIM DA BARRA DE NAVEGAÇÃO-->
+
+        <!--PROJETOS-->
+        <section class="projetos" id="projetos">
+            <h1>Projetos</h1>
+            <h2>Conheça nosso trabalho!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nemo, mollitia qui exercitationem est error temporibus dolor
+            recusandae? Dolore delectus maiores quaerat pariatur dignissimos
+            ipsum aspernatur aperiam, fugit ratione labore. Maxime!</p>
+            <!--Filtro de navegação dos projetos-->
+            <div class="filtro-nav">
+                <a href="#" class="filtro-nav-link" data-type="residenciais">Residenciais</a>
+                <a href="#" class="filtro-nav-link" data-type="interiores">Interiores</a>
+                <a href="#" class="filtro-nav-link" data-type="comerciais">Comerciais</a>
+                <a href="#" class="filtro-nav-link" data-type="culturais">Culturais</a>
+                <a href="#" class="filtro-nav-link" data-type="institucionais">Institucionais</a>
+                <a href="#" class="filtro-nav-link" data-type="urbanismo">Urbanismo</a>
+                <a href="#" class="filtro-nav-link active" data-type="todos">Ver Todos</a>
+            </div>
+            <!--Fim de Filtro de navegação dos projetos-->
+           
+            <!--PROJETOS ARQUITETONICOS-->
+            <div class="lista-projetos">
+                <!--Residenciais-->
+                <!--Casa 1-->
+                <div class="projeto" data-type="residenciais">
+                    <img src="../imagens/residenciais-arth1.jpg">
+                    <h3>Arth Home</h3>
+                    <span>Bangladesh, India - 2025</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                <!--Casa 2-->
+                <div class="projeto" data-type="residenciais">
+                    <img src="../imagens/residenciais-calmhouse1.jpg">
+                    <h3>The Calm House</h3>
+                    <span>Nosara, Costa Rica - 2021</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                <!--Casa 3-->
+                <div class="projeto" data-type="residenciais">
+                    <img src="../imagens/residenciais-northvan2.jpg">
+                    <h3>North Vancouver Remodel</h3>
+                    <span>Vancouver, Canada - 2020</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                <!--Casa 4-->
+                <div class="projeto" data-type="residenciais">
+                    <img src="../imagens/residenciais-townedge1.jpg">
+                    <h3>House at Town's Edge</h3>
+                    <span>Blue Hill, United States - 2024</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                
+                <!--INTERIORES-->
+                <!--Interior 1-->
+                <div class="projeto" data-type="interiores">
+                    <img src="../imagens/interiores-lopota1.jpg">
+                    <h3>Lopota Gift Shop</h3>
+                    <span>Telavi, Georgia - 2025</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                <!--Interior 2-->
+                <div class="projeto" data-type="interiores">
+                    <img src="../imagens/interiores-mensa1.jpg">
+                    <h3>Mensa Kitchen</h3>
+                    <span>Kent Town, Australia - 2025</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                <!--Interior 3-->
+                <div class="projeto" data-type="interiores">
+                    <img src="../imagens/interiores-tribeca1.jpg">
+                    <h3>Tribeca Residence</h3>
+                    <span>New York, United States - 2025</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                
+                <!--COMERCIAIS-->
+                <!--Comercial 1-->
+                <div class="projeto" data-type="comerciais">
+                    <img src="../imagens/comerciais-sunrise1.jpg">
+                    <h3>Sunrise Garden Restaurant</h3>
+                    <span>Bengaluru, India - 2025</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                <!--Comercial 2-->
+                <div class="projeto" data-type="comerciais">
+                    <img src="../imagens/comerciais-treetavern3.jpg">
+                    <h3>Tree Tavern & Cave Teahouse</h3>
+                    <span>Huizhou, China - 2025</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+
+                <!--CULTURAIS-->
+                <!--Culturais 1-->
+                <div class="projeto" data-type="culturais">
+                    <img src="../imagens/culturais-court1.jpg">
+                    <h3>The Court Theatre</h3>
+                    <span>Christchurch, New Zealand - 2025</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                <!--Culturais 2-->
+                <div class="projeto" data-type="culturais">
+                    <img src="../imagens/culturais-samuel1.jpg">
+                    <h3>Samuel H. Scripps Theater Center</h3>
+                    <span>Philipstown, United States - 2025</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+
+                <!--INSTITUCIONAIS-->
+                <!--Institucionais 1-->
+                <div class="projeto" data-type="institucionais">
+                    <img src="../imagens/institucionais-school1.jpg">
+                    <h3>Neighborhood School - Pavilion 02</h3>
+                    <span>São Paulo, Brazil - 2020</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                <!--Institucionais 2-->
+                <div class="projeto" data-type="institucionais">
+                    <img src="../imagens/institucionais-museum2.jpg">
+                    <h3>Art Museum (China Sculpture Institute)</h3>
+                    <span>Wuhu, China - 2025</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                <!--Institucionais 3-->
+                <div class="projeto" data-type="institucionais">
+                    <img src="../imagens/institucionais-institute1.jpg">
+                    <h3>The Packer Collegiate Institute</h3>
+                    <span>Brooklyn, United States - 2025</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                <!--URBANISMO-->
+                <!--Urbanismo 1-->
+                <div class="projeto" data-type="urbanismo">
+                    <img src="../imagens/urbanismo-leepark1.jpg">
+                    <h3>Tom Lee Park</h3>
+                    <span>Memphis, United States - 2025</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+                <!--Urbanismo 2-->
+                <div class="projeto" data-type="urbanismo">
+                    <img src="../imagens/urbanismo-corrego2.jpg">
+                    <h3>Córrego do Bispo Linear Park</h3>
+                    <span>São Paulo, Brazil - 2025</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Animi dolore consequuntur porro a dolorum suscipit quibusdam magni esse.
+                    Odit, eaque.</p>
+                </div>
+            <!--FIM DE PROJETOS ARQUITETONICOS-->
+            </div>
+        </section>
+        <!--FIM DO PROJETOS-->
+
+        <!--RODAPÉ-->
+        <footer class="rodape">
+            <!--ÍCONE LOGO-->
+            <div class="logo-rodape">
+                <img src="../imagens/icon_logo_darkgreen.png">
+            </div>
+            <!--FIM ÍCONE LOGO-->
+
+            <!--ENDEREÇO, TELEFONE E EMAIL-->
+            <div class="info-contato">
+                <ul class="lista-contatos">
+                    <li class="item-info">
+                        <a href="#" class="rodape-link">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>+55 (13) 98753-5823</span>
+                        </a>
+                    </li>
+                    <li class="item-info">
+                        <a href="#" class="rodape-link">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>contato@annagasco.com.br</span>
+                        </a>
+                    </li>
+                    <li class="item-info">
+                        <a href="https://maps.app.goo.gl/RHQzvtcPmEn1A2yF6" class="rodape-link">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Avenida Brasil, 320, Jardim Madalena - Pato Branco/PR</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--FIM ENDEREÇO, TELEFONE E EMAIL-->
+            
+            <!--ÍCONES REDES SOCIAIS-->
+            <div class="icones-rodape">
+                <ul class="icones-contato-rodape">
+                    <li class="icones-rodape">
+                        <a href="https://www.facebook.com/" class="rodape-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://www.instagram.com/" class="rodape-link"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://www.youtube.com/" class="rodape-link"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://br.linkedin.com/" class="rodape-link"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://br.linkedin.com/" class="rodape-link"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://web.whatsapp.com/" class="rodape-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+                <button type="button">Solicite um Orçamento</button>
+            </div>
+            <!--FIM ÍCONES REDES SOCIAIS-->
+        </footer>
+        <!--FIM DO RODAPÉ-->
+        
+        <!--CRÉDITOS-->
+        <section class="creditos">
+            <span>Site desenvolvido por Laura Lopes Guerreiro</span>
+            <span>Projeto e Desenvolvimento de Software</span>
+            <span>Centro Universitário Nelson Akiyoshi</span>
+        </section>
+        <!--FIM DO CRÉDITOS-->
+    </div>
+    <!--FIM DA PÁGINA INICIAL-->
+    
+    <!--Inclui os elementos de JavaScript (executáveis)-->
+    <script src="../JS/script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto e Desenvolvimento de Software</title>
+    <!-- rel="stylesheet" indica ao navegador que é um arquivo de estilos (CSS)-->
+    <!-- href="style.css" indica a localização do arquivo-->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <!--permite o uso de ícones do Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!--permite o uso de fontes estilizadas do Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--fontes selecionadas: Cinzel & Fauna One-->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Fauna+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--PÁGINA INICIAL-->
+    <div class="home-page">
+        <!--BARRA DE NAVEGAÇÃO-->
+        <nav class="navbar">
+            <!--LOGO-->
+            <a href="index.html">
+                <div class="logo">
+                    <img src="../imagens/icon_logo.png">
+                    <span>Anna Gasco</span>
+                    <span>Arquitetura & Urbanismo</span>
+                </div>
+            </a>
+            <!--FIM DO LOGO-->
+
+            <!--ITENS SEÇÕES-->
+            <ul class="itens-nav">
+                <li class="item-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="item-nav">
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                </li>
+                <li class="item-nav">
+                    <a href="#servicos" class="nav-link">Serviços</a>
+                </li>
+                <li class="item-nav">
+                    <a href="projetos.html" class="nav-link">Projetos</a>
+                </li>
+                <li class="item-nav">
+                    <a href="#contato" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <!--FIM DE ITENS SEÇÕES-->
+
+            <!--ÍCONES REDES SOCIAIS-->
+            <ul class="icones-contato">
+                <li class="icon-nav">
+                    <a href="https://www.facebook.com/" class="contato-link"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://www.instagram.com/" class="contato-link"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://www.youtube.com/" class="contato-link"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://br.linkedin.com/" class="contato-link"><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://br.linkedin.com/" class="contato-link"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="icon-nav">
+                    <a href="https://web.whatsapp.com/" class="contato-link"><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+            </ul>
+            <!--FIM ÍCONES REDES SOCIAIS-->
+            <button type="button">Solicite um Orçamento</button>
+        </nav>
+        <!--FIM DA BARRA DE NAVEGAÇÃO-->
+
+        <!--CABEÇALHO-->
+        <header class="header" id="cabecalho">
+            <!--SLOGAN-->
+            <div class="slogan">
+                <h1>Arquitetura Consciente</h1>
+                <h2>Integrando Tecnologia à Natureza</h2>
+                <a href="#">
+                    <button type="button">Solicite um Orçamento</button>
+                </a>
+            </div>
+            <!--FIM DO SLOGAN-->
+            
+            <!--CARROSSEL-->
+            <button class="botao-carrossel prev"><i class="fa-solid fa-circle-chevron-left"></i></button>
+            <button class="botao-carrossel next"><i class="fa-solid fa-circle-chevron-right"></i></button>
+            <div class="carrossel">
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="../imagens/fundo1.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="../imagens/fundo2.jpg">
+                    </li>
+                    <li class="slide">
+                        <img src="../imagens/fundo3.jpg">
+                    </li>
+                </ul>
+            </div>
+            <!--FIM DO CARROSSEL-->
+
+        </header>
+        <!--FIM DO CABEÇALHO-->
+        
+        <!--SEÇÃO SOBRE-->
+        <section class="bibliografia" id="sobre">
+            <div class="sobre">
+                <h1>Sobre</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Provident, exercitationem. Qui sunt impedit accusamus est reiciendis perferendis 
+                    deserunt! Omnis iusto laborum corporis! Ipsum doloribus, earum cupiditate veritatis 
+                    odio officiis tempora!</p>
+                    <p>Sou arquiteta apaixonada por criar espaços únicos, que unem qualidade, requinte e 
+                        funcionalidade. Acredito que cada projeto deve refletir a personalidade e os 
+                        sonhos do cliente, proporcionando bem-estar, conforto e beleza em cada detalhe.
+                        Minha missão é transformar ambientes em verdadeiras experiências, com um olhar 
+                        apurado para o design, materiais de alta qualidade e soluções personalizadas.</p>
+                <button type="button">Fale Comigo</button>
+            </div>
+            <div class="foto-annagasco">
+                <img src="../imagens/annagasco.jpg" alt="Anna Gasco sorrindo para foto.">
+            </div>
+        </section>
+        <!--FIM SEÇÃO SOBRE-->
+
+        <!--SEÇÃO SERVIÇOS-->
+        <section class="servicos" id="servicos">
+            <div class="serv-header">
+                <h2>Nossos Serviços</h2>
+                <span>Serviços especializados para transformar seu espaço!</span>
+            </div>
+            <div class="lista-servicos">
+                <div class="servico">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>Projetos de Arquitetura</span>
+                    <p>Elaboração de projetos arquitetônicos residenciais e comerciais, com foco em funcionalidade, estética e aproveitamento do espaço.</p>
+                </div>
+                <div class="servico">
+                    <i class="fa-solid fa-couch"></i>
+                    <span>Projetos de Interiores</span>
+                    <p>Crio um design de interiores que harmoniza cada detalhe do seu espaço, incluindo iluminação, revestimentos, móveis e mais.</p>
+                </div>
+                <div class="servico">
+                    <i class="fa-solid fa-tree-city"></i>
+                    <span>Urbanismo</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, ut.</p>
+                </div>
+                <div class="servico">
+                    <i class="fa-solid fa-ruler"></i>
+                    <span>Levantamento</span>
+                    <p>Realizo um levantamento detalhado para garantir que o projeto seja desenvolvido com total precisão.</p>
+                </div>
+                <div class="servico">
+                    <i class="fa-solid fa-binoculars"></i>
+                    <span>Acompanhamento de Obra</span>
+                    <p>Acompanho de perto cada etapa da construção, coordenando equipes e fornecedores para garantir que tudo ocorra conforme o planejado.</p>
+                </div>
+                <div class="servico">
+                    <i class="fa-solid fa-gavel"></i>
+                    <span>Projeto Legal</span>
+                    <p>Elaboro todos os desenhos técnicos necessários para aprovação junto à prefeitura e ao condomínio, cuidando para que o projeto esteja em conformidade com as normas.</p>
+                </div>
+            </div>
+            <button type="button">Conheça nossos projetos!</button>
+        </section>
+        <!--FIM SEÇÃO SERVIÇOS-->
+        
+        <!--SEÇÃO CONTATO-->
+        <section class="contato" id="contato">
+            <h1>Contato</h1>
+            <!--FORMULÁRIO CONTATO-->
+            <form class="formulario-contato">
+                <div>
+                    <label for="nome_id">Nome:</label>
+                    <input type="text" id="nome_id" placeholder="Nome">
+                </div>
+                <div>
+                    <label for="email_id">E-mail:</label>
+                    <input type="email" id="email_id" placeholder="E-mail">
+                </div>
+                <div>
+                    <label for="mensagem_id">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem_id" placeholder="Digite sua mensagem."></textarea>
+                </div>
+                <button class="btn-enviarform" type="submit" value="form-info">Enviar</button>
+            </form>
+            <!--FIM DO FORMULÁRIO CONTATO-->
+            
+            <!--MAPA GOOGLE MAPS-->
+            <div class="contato-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114559.0790230656!2d-52.76725603743323!3d-26.197614492117083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e5533f62e22c55%3A0x74c614e61d62d7ce!2sPato%20Branco%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1779554044617!5m2!1spt-BR!2sbr"
+                width="500" height="350"
+                style="border: 0;" 
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <!--FIM MAPA GOOGLE MAPS-->
+        </section>
+        <!--FIM SEÇÃO CONTATO-->
+
+        <!--RODAPÉ-->
+        <footer class="rodape">
+            <!--ÍCONE LOGO-->
+            <div class="logo-rodape">
+                <img src="../imagens/icon_logo_darkgreen.png">
+            </div>
+            <!--FIM ÍCONE LOGO-->
+
+            <!--ENDEREÇO, TELEFONE E EMAIL-->
+            <div class="info-contato">
+                <ul class="lista-contatos">
+                    <li class="item-info">
+                        <a href="#" class="rodape-link">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>+55 (13) 98753-5823</span>
+                        </a>
+                    </li>
+                    <li class="item-info">
+                        <a href="#" class="rodape-link">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>contato@annagasco.com.br</span>
+                        </a>
+                    </li>
+                    <li class="item-info">
+                        <a href="https://maps.app.goo.gl/RHQzvtcPmEn1A2yF6" class="rodape-link">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Avenida Brasil, 320, Jardim Madalena - Pato Branco/PR</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--FIM ENDEREÇO, TELEFONE E EMAIL-->
+            
+            <!--ÍCONES REDES SOCIAIS-->
+            <div class="icones-rodape">
+                <ul class="icones-contato-rodape">
+                    <li class="icones-rodape">
+                        <a href="https://www.facebook.com/" class="rodape-link"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://www.instagram.com/" class="rodape-link"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://www.youtube.com/" class="rodape-link"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://br.linkedin.com/" class="rodape-link"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://br.linkedin.com/" class="rodape-link"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li class="icon-rodape">
+                        <a href="https://web.whatsapp.com/" class="rodape-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+                <button type="button">Solicite um Orçamento</button>
+            </div>
+            <!--FIM ÍCONES REDES SOCIAIS-->
+        </footer>
+        <!--FIM DO RODAPÉ-->
+        
+        <!--CRÉDITOS-->
+        <section class="creditos">
+            <span>Site desenvolvido por Laura Lopes Guerreiro</span>
+            <span>Projeto e Desenvolvimento de Software</span>
+            <span>Centro Universitário Nelson Akiyoshi</span>
+        </section>
+        <!--FIM DO CRÉDITOS-->
+    </div>
+    <!--FIM DA PÁGINA INICIAL-->
+    
+    <!--Inclui os elementos de JavaScript (executáveis)-->
+    <script src="../JS/script.js"></script>
+</body>
+
+
+</html>

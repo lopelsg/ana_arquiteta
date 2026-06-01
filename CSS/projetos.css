@@ -1,0 +1,128 @@
+/*SEÇÃO PROJETOS*/
+/*CABEÇALHO PROJETOS*/
+.projetos{
+    width: 100%;
+    height: 100%;
+    padding: 15rem 0 15rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos h1{
+    font-family: "Cinzel";
+    font-size: 7rem;
+    color: #1D3B38;
+}
+
+.projetos h2{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-weight: lighter;
+    text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.projetos p{
+    width: 90rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #1D3B38;
+    margin-bottom: 4rem;
+}
+/*FIM CABEÇALHO PROJETOS*/
+
+/*FILTRO NAVEGAÇÃO*/
+.filtro-nav{
+    width: 80%;
+    height: 10rem;
+    background-color: white;
+    box-shadow: 0 2rem 8rem rgba(130, 162, 235, 0.2);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+
+.filtro-nav-link{
+    width: 14rem;
+    height: 4rem;
+    background-color: #1D3B38;
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s;
+}
+
+.filtro-nav-link:hover{
+    color: #75ff69;
+    transform: translateY(-0.2rem);
+}
+
+/*FAZ O FILTRO DE NAVEGAÇÃO MUDAR DE COR*/
+.active{
+    background-color: #75ff69;
+    color: #1D3B38;
+    font-weight: bold;
+}
+
+.active:hover{
+    background-color: #75ff69;
+    color: #1D3B38;
+    font-weight: bold;
+}
+/*FIM FILTRO NAVEGAÇÃO*/
+
+/*DISPLAY PROJETOS*/
+.lista-projetos{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.projeto{
+    width: 40%;
+    height: 50rem;
+    position: relative;
+    margin-bottom: 7rem;
+    cursor: pointer;
+    color: #1D3B38;
+}
+
+.projeto.hide{
+    display: none;
+}
+
+.projeto img{
+    object-fit: cover;
+    border-radius: 1rem;
+    width: 100%;
+    height: 30rem;
+}
+
+.projeto h3{
+    font-family: "Cinzel";
+    font-size: 3rem;
+}
+
+.projeto span{
+    font-size: 2rem;
+}
+
+.projeto p{
+    font-size: 1.6rem;
+    text-align: left;
+    width: 95%;
+    margin-top: 1.5rem;
+}
+
+
+/*FIM DE DISPLAY PROJETOS*/
+/*FIM DA PÁGINA PROJETOS*/
